@@ -162,9 +162,13 @@ dites tanpa browser, dan satu halaman selalu ditulis dalam satu transaksi.
 
 ---
 
-## Publikasi
+## Distribusi
 
-Langkah, teks listing, dan justifikasi izin untuk Chrome Web Store ada di
+Rilis resmi ada di halaman **GitHub Releases**: unduh zip, ekstrak, lalu
+**Load unpacked** di `chrome://extensions` (Developer mode harus menyala).
+
+Kalau suatu hari mendaftar ke Chrome Web Store (butuh biaya pendaftaran developer
+$5 sekali), teks listing dan justifikasi izin sudah siap di
 [PUBLISH.md](PUBLISH.md).
 
 ## Lisensi

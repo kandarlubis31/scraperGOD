@@ -1,7 +1,26 @@
-# Publikasi ke Chrome Web Store
+# Publikasi & Distribusi
 
-Dokumen ini berisi apa yang perlu disiapkan **sebelum** menekan Publish, plus
-teks siap tempel. Tidak ada langkah otomatis di sini.
+## Jalur utama sekarang: GitHub Releases (tanpa biaya)
+
+Chrome Web Store memungut biaya pendaftaran developer **$5 sekali**. Selama biaya
+itu belum tersedia, distribusi lewat GitHub Releases sudah cukup dan sudah
+berjalan:
+
+```bash
+npm run build
+npm run zip                      # hasil: .output/scrapergod-<versi>-chrome.zip
+git tag v<versi> && git push origin v<versi>
+gh release create v<versi> .output/scrapergod-<versi>-chrome.zip \
+  --title "v<versi>" --notes-file catatan-rilis.md
+```
+
+Penerima zip tinggal: ekstrak → `chrome://extensions` → Developer mode →
+**Load unpacked**. Instruksi lengkapnya ada di `README.md`.
+
+Bagian di bawah ini disiapkan **untuk kalau nanti** mendaftar ke Web Store.
+Tidak ada langkah otomatis di sini.
+
+## Daftar ke Chrome Web Store (opsional, butuh $5)
 
 ## 1. Yang harus ada di repo
 
@@ -31,7 +50,8 @@ rilis, pastikan folder proyek sudah bernama seperti yang diinginkan, atau ganti
 
 ## 3. Daftar di Chrome Web Store Developer Dashboard
 
-1. Bayar biaya pendaftaran satu kali (akun developer).
+1. Bayar biaya pendaftaran satu kali ($5, akun developer) — **opsional, tunda
+   dulu kalau biaya belum ada.**
 2. **New item** → unggah zip.
 3. Isi listing dengan teks di bawah.
 4. Isi **Privacy practices** (jawaban di bagian 4).
