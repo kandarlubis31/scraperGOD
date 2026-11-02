@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Job Board — Next.js</title>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {
+            "jobs": {
+              "items": [
+                {
+                  "id": "a1",
+                  "jobTitle": "Frontend Engineer",
+                  "slug": "/jobs/frontend-engineer-a1",
+                  "companyName": "Glints",
+                  "city": "Bandung",
+                  "salaryText": "Rp 10–15 jt/bln",
+                  "postedAt": "2026-10-30T08:00:00Z",
+                  "description": "React + TypeScript.",
+                  "tags": ["react", "typescript"]
+                },
+                {
+                  "id": "a2",
+                  "jobTitle": "Data Analyst",
+                  "slug": "/jobs/data-analyst-a2",
+                  "companyName": "Kalibrr",
+                  "city": "Jakarta",
+                  "salaryText": "Rp 8–12 jt/bln",
+                  "postedAt": "2026-10-29T08:00:00Z",
+                  "description": "SQL dan dashboard.",
+                  "tags": ["sql"]
+                },
+                {
+                  "id": "a3",
+                  "jobTitle": "Product Manager",
+                  "slug": "/jobs/product-manager-a3",
+                  "companyName": "Dealls",
+                  "city": "Remote",
+                  "postedAt": "2026-10-26T08:00:00Z",
+                  "description": "B2B SaaS.",
+                  "tags": ["product"]
+                }
+              ],
+              "total": 320,
+              "filters": [
+                { "label": "Semua", "value": "all" },
+                { "label": "Remote", "value": "remote" }
+              ]
+            }
+          }
+        },
+        "page": "/jobs",
+        "query": { "page": "1" }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="__next">
+      <div class="job-list">
+        <article class="job-card">
+          <h2><a href="/jobs/frontend-engineer-a1">Frontend Engineer</a></h2>
+          <p class="company">Glints</p>
+          <p class="city">Bandung</p>
+        </article>
+        <article class="job-card">
+          <h2><a href="/jobs/data-analyst-a2">Data Analyst</a></h2>
+          <p class="company">Kalibrr</p>
+          <p class="city">Jakarta</p>
+        </article>
+        <article class="job-card">
+          <h2><a href="/jobs/product-manager-a3">Product Manager</a></h2>
+          <p class="company">Dealls</p>
+          <p class="city">Remote</p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

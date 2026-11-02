@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lowongan · Muat lebih banyak</title>
+  </head>
+  <body>
+    <main>
+      <ul id="jobs">
+        <li class="card">
+          <h3><a href="/lowongan/backend-a">Backend Engineer</a></h3>
+          <p class="company">PT A</p>
+          <p class="location">Jakarta</p>
+        </li>
+        <li class="card">
+          <h3><a href="/lowongan/frontend-b">Frontend Engineer</a></h3>
+          <p class="company">PT B</p>
+          <p class="location">Bandung</p>
+        </li>
+        <li class="card">
+          <h3><a href="/lowongan/analyst-c">Data Analyst</a></h3>
+          <p class="company">PT C</p>
+          <p class="location">Remote</p>
+        </li>
+      </ul>
+
+      <!-- Pemicu yang harus ditemukan. -->
+      <button type="button" class="btn-load-more">Muat lebih banyak</button>
+
+      <!-- Harus diabaikan: disabled, sedang memuat, dan frasa "selengkapnya"
+           yang biasanya ada DI DALAM kartu, bukan pemicu daftar. -->
+      <button type="button" disabled>Muat lebih banyak</button>
+      <button type="button" class="is-loading">Load more</button>
+      <a href="/lowongan/backend-a">Lihat selengkapnya</a>
+    </main>
+  </body>
+</html>

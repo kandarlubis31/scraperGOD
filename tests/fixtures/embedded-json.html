@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Katalog Magang — embedded JSON</title>
+    <script type="application/json" data-kind="boot">
+      {
+        "results": {
+          "items": [
+            {
+              "title": "Magang Backend",
+              "link": "/magang/backend/octx",
+              "company": { "name": "Bukalapak" },
+              "location": { "city": "Jakarta" },
+              "stipend": "Rp 4 jt/bln",
+              "posted_at": "2026-10-25"
+            },
+            {
+              "title": "Magang Data",
+              "link": "/magang/data/octx2",
+              "company": { "name": "Gojek" },
+              "location": { "city": "Jakarta" },
+              "stipend": "Rp 4,5 jt/bln",
+              "posted_at": "2026-10-24"
+            }
+          ],
+          "total": 2
+        },
+        "filters": { "kota": ["Jakarta", "Bandung"] }
+      }
+    </script>
+  </head>
+  <body>
+    <main></main>
+  </body>
+</html>

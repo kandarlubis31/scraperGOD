@@ -1,0 +1,50 @@
+{
+  "name": "scrapergod",
+  "description": "Tunjuk daftar di halaman, ambil itemnya, salin ke spreadsheet.",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "web-scraper",
+    "manifest-v3",
+    "wxt",
+    "react",
+    "typescript",
+    "data-extraction",
+    "csv-export"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "dexie": "^4.4.7",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@wxt-dev/module-react": "^1.1.5",
+    "fake-indexeddb": "^6.2.7",
+    "jsdom": "^27.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4",
+    "web-ext": "^10.5.0",
+    "wxt": "^0.21.3"
+  }
+}

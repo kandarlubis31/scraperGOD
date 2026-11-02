@@ -1,0 +1,55 @@
+# ---- Dependensi ----
+node_modules
+
+# ---- Hasil build & artefak ekstensi ----
+.output
+.wxt
+web-ext.config.ts
+*.zip
+*.crx
+# Kunci signing ekstensi: TIDAK PERNAH boleh masuk repo, termasuk untuk
+# open source. Kalau ini ke-commit, kunci harus dianggap bocor dan diganti.
+*.pem
+*.p12
+*.crx.bak
+
+# ---- Cache & turunan ----
+.vite
+.cache
+coverage
+.nyc_output
+*.tsbuildinfo
+stats.html
+stats-*.json
+
+# ---- Log ----
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Rahasia & konfigurasi lokal ----
+.env
+.env.*
+!.env.example
+*.local
+
+# ---- Editor & sistem ----
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ---- Perkakas AI (konfigurasi mesin lokal; skill di .agents/ sengaja TIDAK
+#      di-ignore supaya bisa dibagikan) ----
+.claude/
+.cursor/

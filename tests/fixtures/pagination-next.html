@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pagination</title>
+  </head>
+  <body>
+    <ul class="jobs">
+      <li><a href="/jobs/1">Satu</a></li>
+      <li><a href="/jobs/2">Dua</a></li>
+      <li><a href="/jobs/3">Tiga</a></li>
+    </ul>
+
+    <nav class="pager" aria-label="Pagination">
+      <a class="page" href="/jobs?page=1">1</a>
+      <a class="page is-active" href="/jobs?page=2" aria-current="page">2</a>
+      <a class="page next" href="/jobs?page=3" aria-label="Halaman berikutnya">›</a>
+    </nav>
+
+    <nav class="pager-disabled">
+      <a class="page next disabled" href="/jobs?page=2" aria-label="Halaman berikutnya">›</a>
+    </nav>
+  </body>
+</html>
