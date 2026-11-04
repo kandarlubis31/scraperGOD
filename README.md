@@ -156,7 +156,7 @@ src/messaging/     protokol pesan antar-bagian
 tests/             unit test + fixture HTML
 ```
 
-Aturan main proyek ini ada di `CONTEXT.md` (invarian §9): state run hidup di
+Aturan main proyek ini (invarian §9): state run hidup di
 Dexie (bukan variabel global service worker), `src/core/**` tetap murni dan bisa
 dites tanpa browser, dan satu halaman selalu ditulis dalam satu transaksi.
 
