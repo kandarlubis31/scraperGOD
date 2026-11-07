@@ -171,6 +171,16 @@ Kalau suatu hari mendaftar ke Chrome Web Store (butuh biaya pendaftaran develope
 $5 sekali), teks listing dan justifikasi izin sudah siap di
 [PUBLISH.md](PUBLISH.md).
 
+---
+
+## English
+
+**scraperGOD** is a Chrome extension that turns a listing page into a table. You point at one card in the list and the extension infers the whole list, including the fields inside each card.
+
+Results can be exported to CSV or JSON, and everything runs in your own browser.
+
+---
+
 ## Lisensi
 
 MIT — lihat [LICENSE](LICENSE).
